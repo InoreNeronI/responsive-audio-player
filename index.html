@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Responsive audio player</title>
+    <link rel="stylesheet" href="style.scss" />
+  </head>
+  <body>
+    <div id="audio-player-container">
+      <audio src="https://assets.codepen.io/4358584/Anitek_-_Komorebi.mp3" preload="metadata" loop></audio>
+      <p>audio player ish</p>
+      <button id="play-icon"></button>
+      <span id="current-time" class="time">0:00</span>
+      <input type="range" id="seek-slider" max="100" value="0" />
+      <span id="duration" class="time">0:00</span>
+      <output id="volume-output">100</output>
+      <input type="range" id="volume-slider" max="100" value="100" />
+      <button id="mute-icon"></button>
+    </div>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.12.2/lottie.min.js"
+      integrity="sha512-jEnuDt6jfecCjthQAJ+ed0MTVA++5ZKmlUcmDGBv2vUI/REn6FuIdixLNnQT+vKusE2hhTk2is3cFvv5wA+Sgg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="script.js" type="module"></script>
+  </body>
+</html>

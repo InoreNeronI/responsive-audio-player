@@ -1,0 +1,43 @@
+{
+  "name": "responsive-audio-player",
+  "version": "1.0.0",
+  "description": "Responsive audio player using HTML, CSS and JavaScript: https://codepen.io/idorenyinudoh/pen/GRjBXER",
+  "homepage": "https://github.com/InoreNeronI/responsive-audio-player",
+  "scripts": {
+    "start": "parcel serve *.html --open",
+    "build": "parcel build *.html --public-url /responsive-audio-player",
+    "prestart": "eslint --fix . && prettier --write ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/InoreNeronI/responsive-audio-player.git"
+  },
+  "keywords": [],
+  "author": "Martin Mozos <martinmozos@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/InoreNeronI/responsive-audio-player/issues"
+  },
+  "dependencies": {
+    "lottie-web": "^5.12.2"
+  },
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.11.0",
+    "@parcel/validator-eslint": "^2.11.0",
+    "eslint": "^7.32.0",
+    "parcel": "^2.11.0",
+    "parcel-reporter-clean-dist": "^1.0.4",
+    "prettier": "3.2.5",
+    "prettier-plugin-css-order": "^2.0.1"
+  },
+  "alias": {
+    "lottie-web": {
+      "global": "lottie"
+    }
+  },
+  "targets": {
+    "default": {
+      "context": "browser"
+    }
+  }
+}
